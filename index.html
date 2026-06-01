@@ -3,71 +3,155 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio de Lara De Luca, diseñadora gráficas. Descubrí mis proyectos más recientes y contactame para hacer realidad tu idea.">
+    <meta name="keywords"
+        content="Lara De Luca, diseño gráfico, portfolio, proyectos, contacto, diseño de interfaces, diseño de estampados, diseño de logotipos">
     <title>Lara De Luca Portfolio</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" href="img/favicon.svg" type="image/x-icon" width="50" height="50">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Milonga&display=swap');
+    </style>
+    <link rel="stylesheet" type="text/css" href="js/jquery.fancybox.css">
+
 </head>
 
 <body>
 
     <header>
 
-        <section class="splash">
-   <header class="topbar">
-      <button>MENÚ</button>
-   </header>
 
-   <div class="hero-content">
-      <img class="logo">
-      <p>Lara De Luca | Diseñadora Gráfica</p>
-   </div>
-
-</section>
         <nav>
-            <img src="img/inicio-isotipo.svg" alt="isotipo del inicio" width="40" height="40" />
-            <p>Trabajos</p>
-            <p>Tienda</p>
-            <p>Sobre Mí</p>
-            <p>Contacto</p>
+            <a href="index.html">
+                <img src="img/isotipo-inicio.svg" alt="isotipo del inicio" width="30" height="36" />
+            </a>
+
+            <ul>
+                <li>
+                    <a href="#sobremi">Sobre Mí</a>
+                    <a href="#trabajos">Trabajos</a>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
         </nav>
 
-        <img src="img/delucalogo.svg" alt="Logotipo De Luca" width="600" height="260" />
+        <img class="logo-ppal" src="img/delucalogo.svg" alt="Logotipo De Luca" width="600" height="260" />
         <h1>
-            Lara De Luca, Diseñadora Gráfica
+            Bienvenidxs a mi portfolio
         </h1>
     </header>
 
 
     <main>
-        <article id="sobremi">
-            <figure>
-                <img src="img/mifoto.png" alt="foto de perfil" width="201" height="201" />
+
+        <section id="sobremi">
+
+            <figure class="cartas-contenedor">
+                <div class="imagenes-cartas">
+                    <img class="carta1" src="img/carta1.svg" alt="foto de perfil" width="292" height="332" />
+                    <img class="carta2" src="img/carta2.svg" alt="foto de perfil" width="179" height="289" />
+                    <img class="carta3" src="img/carta3.svg" alt="foto de perfil" width="292" height="332" />
+                </div>
                 <figcaption>
-                    Hola! Soy diseñadora gráfica, tengo dos gatos que se llaman Ramón y Suertudo, amo el arte y
-                    volcarlo
-                    en cada uno de mis diseños
+                    <h3>Elegí una carta</h3>
                 </figcaption>
             </figure>
-        </article>
 
-        <section>
-            <article>
-                Trabajos
+            <article class="texto-contenedor">
+                <h2>Sobre Mí</h2>
+                <p>¡Hola! soy Lara De Luca, estudio Diseño y Comunicación Visual.
+                    Mi recorrido profesional va desde los talleres de indumentaria
+                    hasta el diseño tradicional.
+                    Haber trabajado en el mundo físico y textil me entrenó el ojo
+                    para los detalles y sobre todo, cómo las personas viven y usan lo que diseño.
+                    Hoy llevo toda esa experiencia al entorno digital, me encanta fusionar la estética de la moda con el
+                    diseño de interfaces: que sean cómodos, intuitivos y que la gente realmente disfrute usar.
+                    Si tenés un proyecto en mente, ¡no dudes en escribirme!</p>
+                <a href="img/curriculum-deluca.pdf" download="curriculum-deluca.pdf">
+                    <img src="img/boton-cv.svg" alt="boton cv" width="308" height="52">
+                </a>
             </article>
         </section>
 
-        <article>
-            Tienda
-        </article>
 
+        <hr class="separador-imagen" />
+
+        <section id="trabajos">
+            <h2>Trabajos</h2>
+            <p>Mis proyectos más recientes</p>
+
+            <div class="trabajos-grid">
+                <a href="js/img-trabajos/variante-logotipo.jpg" data-fancybox="gallery"
+                    data-caption="Diseño de variante de Logotipo">
+                    <img src="js/img-trabajos/variante-logotipo-thumbnail.jpg" alt="variante de logotipo" width="500"
+                        height="373" />
+                </a>
+
+                <a href="js/img-trabajos/medias.jpg" data-fancybox="gallery"
+                    data-caption="Diseño de bordado para Quinoto Indumentaria">
+                    <img src="js/img-trabajos/medias-thumbnail.jpg" alt="medias" width="500" height="373" />
+                </a>
+
+                <a href="js/img-trabajos/bolsa.jpg" data-fancybox="gallery"
+                    data-caption="Diseño de estampado para bolsas">
+                    <img src="js/img-trabajos/bolsa-thumbnail.jpg" alt="bolsas" width="500" height="373" />
+                </a>
+
+                <a href="js/img-trabajos/carru.jpg" data-fancybox="gallery"
+                    data-caption="Diseño de Logotipo y packaging para juguetería">
+                    <img src="js/img-trabajos/carru-thumbnail.jpg" alt="carru" width="500" height="373" />
+                </a>
+
+                <a href="js/img-trabajos/remera.jpg" data-fancybox="gallery"
+                    data-caption="Diseño de rapport para remeras">
+                    <img src="js/img-trabajos/remera-thumbnail.jpg" alt="remeras" width="500" height="373" />
+                </a>
+
+                <a href="js/img-trabajos/etiqueta.jpg" data-fancybox="gallery"
+                    data-caption="Diseño de etiqueta para Quinoto Indumentaria">
+                    <img src="js/img-trabajos/etiqueta-thumbnail.jpg" alt="etiquetas" width="500" height="373" />
+                </a>
+            </div>
+
+        </section>
+
+        <hr class="separador-imagen" />
     </main>
 
-    <aside>
-    </aside>
+    <audio id="sonido-carta" src="audio/carta-hover.mp3" preload="auto"></audio>
 
     <footer>
-        <p>© 2026 Lara De Luca. Todos los derechos reservados.</p>
+        <div class="footer-contenedor">
+            <div class="izquierda-footer">
+                <p class="footer-titulo">¿Tenés una idea?</p>
+                <h3 class="footer-subtitulo">Contactame y la hacemos realidad</h3>
+            </div>
+
+        </div>
+
+        <div>
+            <p class="footer-derechos">© 2026 Lara De Luca. Todos los derechos reservados.</p>
+        </div>
     </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+
+    <script>
+        const audioCarta = document.getElementById('sonido-carta');
+        const cartas = document.querySelectorAll('.carta1, .carta2, .carta3');
+
+        cartas.forEach(carta => {
+            carta.addEventListener('mouseenter', () => {
+                audioCarta.currentTime = 0;
+                audioCarta.play();
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>
